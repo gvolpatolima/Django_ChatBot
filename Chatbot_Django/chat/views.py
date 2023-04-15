@@ -5,4 +5,8 @@ def index(request):
     return HttpResponse("This is my first url")
 
 def specific(request):
-    return HttpResponse("asdasd")
+    numre = 55
+    return HttpResponse("numre")
+
+def article(request, particle_id):
+    return HttpResponse(particle_id)
