@@ -34,6 +34,8 @@ def index(request):
 #     return HttpResponse(aiMessage)
 
 
+import random
+
 def getResponse(request):
     openai.api_key = env.API_KEY
 
@@ -43,8 +45,8 @@ def getResponse(request):
     response = openai.Completion.create(
         engine="ada",
         prompt=prompt,
-        max_tokens=50,
-        temperature=0.5,
+        max_tokens=20,
+        temperature=random.uniform(0.2, 1),
         n=1,
     )
 
