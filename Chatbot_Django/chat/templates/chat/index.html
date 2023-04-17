@@ -33,7 +33,6 @@ function getUserResponse() {
     var userText = $('#textInput').val();
     var userHTML = "<p class = 'userText'>User: <span>"+userText+"</span></p>";
     $('#textInput').val("");
-    $('#textInput').prop('disabled', true); // Disable input field
 
     $('#chatbot').append(userHTML);
 
@@ -41,9 +40,10 @@ function getUserResponse() {
         .then(response => response.text())
 
         .then(aiMessage => {
-            var aiHTML = "<p class = 'aiText'>AI: <span>" + aiMessage + "</span></p>";
+
+            var aiHTML = "<p class= 'aiText' style='font-family: monospace; font-size: 14px; width: 100%; padding: 16px; color: rgb(194, 194, 214);'>AI: <span style='white-space: pre-wrap; font-family: monospace; font-size: 14px; width: 100%; padding: 16px; color: rgb(194, 194, 214);'>" + aiMessage + "</span></p>";
             $('#chatbot').append(aiHTML);
-            $('#textInput').prop('disabled', false); // Re-enable input field
+
         });
 }
 
