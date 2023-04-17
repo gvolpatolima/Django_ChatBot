@@ -1,3 +1,4 @@
+
 body{
     display: flex;
     justify-content: center;
@@ -16,7 +17,7 @@ body{
     padding: 3em;
     border-radius: 30px;
     width: 100%;
-    max-width: 420px;
+    max-width: 700px;
     margin: 1em;
 }
 
@@ -33,7 +34,7 @@ body{
     margin-left: auto;
     margin-right: auto;
     margin-top: 40px;
-    width = 70%;
+    width: 70%;
     text-align: center;
 }
 
@@ -56,5 +57,14 @@ body{
     background-color: rgb(40, 48, 40);
     color: white;
     border-radius: 10px;
+}
+
+.userText{
+    text-align: right;
+    font-family: monospace;
+    font-size: 14px;
+    width: 100%;
+    padding: 16px;
+    color: rgb(213, 67, 41);
 }
 
