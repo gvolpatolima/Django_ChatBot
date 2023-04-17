@@ -19,3 +19,6 @@ media
 
 # Generated files
 .idea/**/contentModel.xml
+
+#shhh
+Chatbot_Django/chat/.env

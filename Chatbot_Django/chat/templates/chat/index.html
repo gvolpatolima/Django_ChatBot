@@ -27,23 +27,31 @@
   </div>
 
   <script>
-  function getUserResponse(){
-   var userText = $('#textInput').val();
-   var userHTML = "<p class = 'userText'>User: <span>"+userText+"</span></p>";
-   $('#textInput').val("");
 
-   $('#chatbot').append(userHTML);
+function getUserResponse() {
+    var userText = $('#textInput').val();
+    var userHTML = "<p class = 'userText'>User: <span>"+userText+"</span></p>";
+    $('#textInput').val("");
+    $('#textInput').prop('disabled', true); // Disable input field
+
+    $('#chatbot').append(userHTML);
+
+    fetch(`/chat/getResponse?userMessage=${userText}`)
+        .then(response => response.text())
+        .then(aiMessage => {
+            var aiHTML = "<p class = 'aiText'>AI: <span>" + aiMessage + "</span></p>";
+            $('#chatbot').append(aiHTML);
+            $('#textInput').prop('disabled', false); // Re-enable input field
+        });
+        console.log("myFunction called");
+}
 
 
-   $.get('/chat/getResponse', {userMessage:userText}).done(function(data){
+$('#buttonInput').click(function() {
+  getUserResponse();
+});
 
-   })
 
-   }
-
-   $('#buttonInput').click(function(){
-    getUserResponse();
-    })
 
 
 
