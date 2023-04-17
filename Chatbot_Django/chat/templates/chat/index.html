@@ -39,12 +39,12 @@ function getUserResponse() {
 
     fetch(`/chat/getResponse?userMessage=${userText}`)
         .then(response => response.text())
+
         .then(aiMessage => {
             var aiHTML = "<p class = 'aiText'>AI: <span>" + aiMessage + "</span></p>";
             $('#chatbot').append(aiHTML);
             $('#textInput').prop('disabled', false); // Re-enable input field
         });
-        console.log("myFunction called");
 }
 
 

@@ -68,3 +68,10 @@ body{
     color: rgb(213, 67, 41);
 }
 
+.aiText {
+    font-family: monospace;
+    font-size: 14px;
+    width: 100%;
+    padding: 16px;
+    color: rgb(213, 67, 41);
+}
