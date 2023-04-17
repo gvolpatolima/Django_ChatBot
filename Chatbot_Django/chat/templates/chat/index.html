@@ -45,7 +45,7 @@ function getUserResponse() {
             var aiHTML = "<p class= 'aiText' style='font-family: monospace; font-size: 14px; width: 100%; padding: 16px; color: rgb(194, 194, 214);'>AI: <span style='white-space: pre-wrap; font-family: monospace; font-size: 14px; width: 100%; padding: 16px; color: rgb(194, 194, 214);'>" + aiMessage + "</span></p>";
             $('#chatbot').append(aiHTML);
             $('#chatbot').scrollTop($('#chatbot')[0].scrollHeight);
-
+            window.scrollTo(0, document.body.scrollHeight);
         });
 }
 
