@@ -33,6 +33,12 @@
    $('#textInput').val("");
 
    $('#chatbot').append(userHTML);
+
+
+   $.get('/chat/getResponse', {userMessage:userText}).done(function(data){
+
+   })
+
    }
 
    $('#buttonInput').click(function(){
