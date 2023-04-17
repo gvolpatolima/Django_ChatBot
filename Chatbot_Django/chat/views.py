@@ -51,5 +51,4 @@ def getResponse(request):
     )
 
     aiMessage = response.choices[0].text.strip()
-    print(aiMessage)
     return HttpResponse(aiMessage)
