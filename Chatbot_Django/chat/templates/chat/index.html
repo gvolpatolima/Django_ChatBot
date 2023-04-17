@@ -25,6 +25,19 @@
 
   </div>
 
+  <script>
+    function getUserResponse(){
+      var userText = $('#textInput').val();
+      var userHTML = "<p class = 'userText'>User: <span>"+userText+"</span></p>;
+        $('#textInput').val("");
+
+        $('#chatbot').append(userHTML);
+
+
+    }
+  </script>
+
+
 
   </body>
 </html>
