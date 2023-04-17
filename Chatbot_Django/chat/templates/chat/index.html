@@ -1,25 +1,25 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>yes</title>
-
-
-    {% load static %}
-     <link rel="stylesheet" type="text/css" href="{% static 'chat/style.css' %}">
+    {% block css %}
+        <link rel="stylesheet" type="text/css" href="{% static 'chat/style.css' %}">
+    {% endblock %}
   </head>
   <body>
 
-  <div>
+  <div class="card">
     <div id="chatbot">
       <p class="botText"><span>Hi there</span></p>
     </div>
 
     <div id="userInput">
       <input type="text" id="textInput" name="userMessage" placeholder="Type your prompt..."/>
-      <input type="submit" id="buttobnInput">
+      <input type="submit" value="Send" id="buttonInput">
 
     </div>
 
