@@ -20,6 +20,13 @@ body{
     margin: 1em;
 }
 
+.botText{
+    font-family: monospace;
+    font-size: 14px;
+    text-align: left;
+    line-height: 25px;
+    rgb(194, 194, 214)
+}
 
 
 #userInput{
