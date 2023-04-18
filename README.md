@@ -34,7 +34,7 @@ This is a project that demonstrates the usage of Django as a front-end to intera
 
 ## Usage
 
-1. Enter a prompt in the input field and click the "Submit" button to send it to the Chatbot.
+1. Enter a prompt in the input field and click the "Enviar" button to send it to the Chatbot.
 2. The Chatbot will generate a response based on the input prompt using the GPT-3.5 model.
 3. The response will be displayed in the chatbot interface in real-time.
 4. You can continue to enter new prompts and receive responses from the Chatbot as desired.
