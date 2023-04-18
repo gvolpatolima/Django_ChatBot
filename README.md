@@ -12,7 +12,8 @@ This is a project that demonstrates the usage of Django as a front-end to intera
 
 ## Images
 
-<img title="Image" alt="There should be an image here" src="https://prnt.sc/_EF0FSkcaaXN">
+<img title="a title" alt="Alt text" src="Chatbot_Django/images/a.png">
+<img title="a title" alt="Alt text" src="Chatbot_Django/images/b.jpg">
 
 
 ## Technologies Used
