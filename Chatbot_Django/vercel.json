@@ -1,0 +1,14 @@
+{
+    "builds": [
+      {
+        "src": "Chatbot_Django/wsgi.py",
+        "use": ",@vercel/python"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "Chatbot_Django/wsgi.py"
+      }
+    ]
+}
