@@ -25,8 +25,8 @@ SECRET_KEY = 'django-insecure-g(m$_@o5$pr7l@*v32o3-20#xmy7fnl_+3jp7it4y$98&^_-43
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-# vercel_app/settings.py
-ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app']
+ALLOWED_HOSTS = []
+
 
 
 # Application definition
@@ -69,8 +69,7 @@ TEMPLATES = [
     },
 ]
 
-# vercel_app/settings.py
-WSGI_APPLICATION = 'vercel_app.wsgi.app'
+WSGI_APPLICATION = 'Chatbot_Django.wsgi.application'
 
 
 # Database
@@ -124,8 +123,3 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-# VERCEL
-
-STATICFILES_DIRS = [BASE_DIR/'static', ]
-STATIC_ROOT = BASE_DIR/'staticfiles'
